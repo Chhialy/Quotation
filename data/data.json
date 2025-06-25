@@ -1,22 +1,27 @@
 [
   {
-      "quantity": 2,
-      "description": "Professional Web Development Service",
-      "unitPrice": 1500.00
+      "quantity": 5,
+      "description": "Wireless Bluetooth Earbuds - Premium Sound Quality",
+      "unitPrice": 89.99
   },
   {
-      "quantity": 1,
-      "description": "Mobile App Development - iOS & Android",
-      "unitPrice": 2500.00
+      "quantity": 2,
+      "description": "USB-C Fast Charging Cable - 6ft Braided Design",
+      "unitPrice": 24.99
   },
   {
       "quantity": 3,
-      "description": "Database Design and Implementation",
-      "unitPrice": 800.00
+      "description": "Portable Power Bank 20000mAh - Dual USB Output",
+      "unitPrice": 59.99
   },
   {
       "quantity": 1,
-      "description": "UI/UX Design Package with 3 Revisions",
-      "unitPrice": 1200.00
+      "description": "Laptop Stand - Adjustable Aluminum Design",
+      "unitPrice": 79.99
+  },
+  {
+      "quantity": 4,
+      "description": "Phone Case - Protective Silicone with Screen Guard",
+      "unitPrice": 19.99
   }
 ]
