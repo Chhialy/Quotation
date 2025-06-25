@@ -1,0 +1,239 @@
+/* Modern Quotation Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-color);
+}
+
+/* Company Info Styling */
+.company-name {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.address-info p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Quotation Header */
+.quotation-header .display-4 {
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.company-logo img {
+    border: px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.company-logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* Table Styling */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.table-primary {
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+
+.table-primary th {
+    border-color: rgba(255,255,255,0.2);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Data rows */
+.data-row {
+    transition: all 0.2s ease;
+}
+
+.data-row:hover {
+    background-color: rgba(13, 110, 253, 0.08) !important;
+}
+
+.data .btn {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.data-row:hover .data .btn {
+    opacity: 1;
+}
+
+/* Footer totals */
+#sub-total {
+    border-top: 2px solid var(--primary-color) !important;
+}
+
+.table-light {
+    background-color: rgba(13, 110, 253, 0.05) !important;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.modal-header {
+    border-radius: 12px 12px 0 0;
+    border-bottom: none;
+    padding: 1.5rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0 0 12px 12px;
+    padding: 1.5rem;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #0b5ed7);
+    border: none;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0b5ed7, var(--primary-color));
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+
+.btn-outline-danger {
+    border-width: 2px;
+}
+
+.btn-outline-danger:hover {
+    transform: scale(1.05);
+}
+
+/* Alert Styling */
+.alert-primary {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(13, 110, 253, 0.05));
+    border: 1px solid rgba(13, 110, 253, 0.2);
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--primary-color), #0b5ed7) !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem !important;
+    }
+    
+    .company-logo img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .modal-dialog {
+        margin: 1rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .btn, .modal {
+        display: none !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    body {
+        background-color: white !important;
+    }
+}

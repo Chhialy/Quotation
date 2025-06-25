@@ -1,0 +1,22 @@
+[
+  {
+      "quantity": 2,
+      "description": "Professional Web Development Service",
+      "unitPrice": 1500.00
+  },
+  {
+      "quantity": 1,
+      "description": "Mobile App Development - iOS & Android",
+      "unitPrice": 2500.00
+  },
+  {
+      "quantity": 3,
+      "description": "Database Design and Implementation",
+      "unitPrice": 800.00
+  },
+  {
+      "quantity": 1,
+      "description": "UI/UX Design Package with 3 Revisions",
+      "unitPrice": 1200.00
+  }
+]
